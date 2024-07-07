@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz and Slideshow</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the Quiz and Slideshow</h1>
+        
+        <div class="instructions">
+            <h2>How to Play the Quiz</h2>
+            <ol>
+                <li>Read the question carefully.</li>
+                <li>Select the correct answer from the options provided.</li>
+                <li>Click the "Submit" button to check your answer.</li>
+                <li>Your result will be displayed below the question.</li>
+            </ol>
+        </div>
+
+        <div class="quiz-section">
+            <h2>Quiz</h2>
+            <div id="quiz">
+                <p>Question 1: What is the capital of France?</p>
+                <input type="radio" name="q1" value="Paris"> Paris<br>
+                <input type="radio" name="q1" value="London"> London<br>
+                <input type="radio" name="q1" value="Berlin"> Berlin<br>
+                <input type="radio" name="q1" value="Madrid"> Madrid<br>
+                <button onclick="submitQuiz()">Submit</button>
+                <p id="quiz-result"></p>
+            </div>
+        </div>
+        
+        <div class="slideshow-section">
+            <h2>Slideshow</h2>
+            <div class="slideshow-container">
+                <div class="slide fade">
+                    <img src="orange_crush_514795.jpg" alt="Slide 1">
+                </div>
+                <div class="slide fade">
+                    <img src="orange_crush_514795.jpg" alt="Slide 2">
+                </div>
+                <div class="slide fade">
+                    <img src="orange_crush_514795.jpg" alt="Slide 3">
+                </div>
+                <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+                <a class="next" onclick="changeSlide(1)">&#10095;</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
